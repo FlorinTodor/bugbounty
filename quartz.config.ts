@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "es-ES",
-    baseUrl: "florintodor.dev/bugbounty-notes",
+    baseUrl: "florintodor.dev/bugbounty",
     ignorePatterns: ["private", "templates", ".obsidian", "_plantillas", "_adjuntos"],
     defaultDateType: "modified",
     theme: {
