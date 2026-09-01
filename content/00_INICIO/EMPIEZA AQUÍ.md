@@ -15,7 +15,8 @@ Vault de estudio y trabajo para **bug bounty**. Creado el 2026-08-31.
 
 ## Lo primero que tienes que leer (en este orden)
 
-1. tu punto de partida ← empieza por aquí, 5 min
+0. [[🗺️ ROADMAP — por dónde ir con todo]] ← **el mapa maestro**: en qué orden usar PortSwigger, HTB, BBLabs y la caza
+1. tu punto de partida ← 5 min
 2. [[La verdad incómoda sobre el bug bounty]] ← 5 min, evita que abandones en el mes 2
 3. [[Ruta de aprendizaje]] ← el plan completo por fases
 4. [[Rutina semanal]] ← cómo repartir tus tardes

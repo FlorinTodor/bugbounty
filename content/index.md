@@ -10,6 +10,7 @@ navegables desde el grafo y el buscador (tecla `Ctrl+K`).
 
 ## Por dónde empezar
 
+- [[🗺️ ROADMAP — por dónde ir con todo]] — **el mapa maestro**: en qué orden usar cada recurso y cazar
 - [[EMPIEZA AQUÍ]] — el índice completo del vault
 - [[Ruta de aprendizaje]] — plan de 12 meses por fases
 - [[La verdad incómoda sobre el bug bounty]] — expectativas realistas

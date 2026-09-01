@@ -11,6 +11,7 @@ Actualiza el estado tú mismo según avances en [[Ruta de aprendizaje]].
 - 🔴 [[Fallos de lógica de negocio]]
 - 🔴 [[Autenticación y toma de cuentas]]
 - 🔴 [[SSRF]]
+- 🔴 [[Mass assignment]] *(a caballo entre IDOR y lógica; muy rentable en APIs)*
 
 ## Bloque B — volumen
 - 🟡 [[XSS moderno]] *(tienes base clásica en tu vault viejo)*
