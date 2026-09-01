@@ -47,6 +47,11 @@ Los programas de bug bounty empiezan a incluir "nuestro chatbot" en el scope. Te
    `os.path.join` con input de usuario, `requests.get(url_usuario)`.
 4. En cada target web que caces, **si tiene un chatbot, es prioridad**: mira qué herramientas
    tiene detrás y si el contexto mezcla datos de varios usuarios.
+5. **HTB Academy — path 405 "AI Red Teamer"** (con Google): NO entero. Solo estos tres módulos,
+   que son ~40 secciones y son los que convierten en bounties: **Prompt Injection Attacks**,
+   **LLM Output Attacks** y **Attacking AI - Application and System**. Los tres de *AI Evasion*
+   (63 secciones de adversarial ML) son para la cert COAE y el CV, no para cazar.
+   Detalle completo en [[HTB Academy - qué hacer y qué saltarse]].
 
 ## Por qué esto es más rentable para ti que competir en XSS
 
@@ -54,4 +59,4 @@ Los programas de bug bounty empiezan a incluir "nuestro chatbot" en el scope. Te
 - En "deserialización en un framework de MLOps" compites con **20 personas en el mundo**, y la
   mitad no sabe leer Python bien.
 
-Enlaces: [[Comparativa de plataformas]] · [[MOC - IA en bug bounty]] · [[Deserialización insegura]]
+Enlaces: [[Comparativa de plataformas]] · [[MOC - IA en bug bounty]] · [[Deserialización insegura]] · [[HTB Academy - qué hacer y qué saltarse]]

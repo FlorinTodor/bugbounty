@@ -69,6 +69,12 @@ Orden **por retorno económico real**, no por el orden de OWASP. Una nota por cl
 **Regla:** no pases de bloque sin haber hecho **todos los labs de PortSwigger** de ese tema,
 incluidos los *Expert*. Los Expert son los que se parecen a la vida real.
 
+> [!tip] El Bloque C **no está** en el path de HTB
+> Los módulos de HTB que cubren este bloque (*Attacking Authentication Mechanisms*, *HTTP Attacks*,
+> *Abusing HTTP Misconfigurations*, *Whitebox Attacks*, *Modern Web Exploitation Techniques*,
+> *Deserialization*) son sueltos, fuera del path 17. Ahí es donde HTB suma sobre PortSwigger,
+> sobre todo por el ángulo **whitebox**. Ver [[HTB Academy - qué hacer y qué saltarse]].
+
 ## FASE 3 — Recon y primer target real (a partir de la semana 6, **en paralelo**)
 
 No esperes a terminar la Fase 2. Desde la semana 6, **1 tarde a la semana es de caza real**.
@@ -82,6 +88,8 @@ No esperes a terminar la Fase 2. Desde la semana 6, **1 tarde a la semana es de 
 ## FASE 4 — Profesionalizar (meses 6-12)
 
 - [ ] Especialización: elige 2. Recomendadas para ti: **APIs/lógica de negocio** + [[Nicho - seguridad de IA y ML]].
+      Ojo: el nicho de IA **no esperes a la fase 4 para empezarlo** — los 3 módulos rentables del path
+      *AI Red Teamer* caben en las semanas 3-6. Ver [[HTB Academy - qué hacer y qué saltarse]].
 - [ ] Automatización propia: [[Automatizar tu recon con IA]] — monitorización continua de tus targets.
 - [ ] Objetivo de reputación: entrar en **programas privados por invitación** (ahí baja la competencia).
 - [ ] Opcional: certificación **CBBH** de HTB si quieres que esto también te sirva en el CV.
