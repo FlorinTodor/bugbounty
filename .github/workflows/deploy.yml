@@ -29,6 +29,10 @@ jobs:
         run: npm ci
       - name: Build Quartz
         run: npx quartz build
+      # El 404 de Quartz no se parece al del portafolio. Se pisa aquí, después del
+      # build, para no tocar quartz/ (que se sobrescribe al actualizar Quartz).
+      - name: 404 con el diseño del portafolio
+        run: cp custom/404.html public/404.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
