@@ -357,7 +357,11 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     autoStart: false,
     autoDensity: true,
     backgroundAlpha: 0,
-    preference: "webgpu",
+    // Parche local: Quartz v4 pide WebGPU y Brave (y otros navegadores con el
+    // flag desactivado) no lo tienen, asi que app.init() falla y el grafo sale
+    // vacio. Con "webgl" pixi usa el renderer de siempre, soportado en todos.
+    // OJO: si actualizas Quartz, vuelve a aplicar este cambio.
+    preference: "webgl",
     resolution: window.devicePixelRatio,
     eventMode: "static",
   })
