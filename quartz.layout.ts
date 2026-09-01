@@ -38,7 +38,22 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      sortFn: (a, b) => {
+        // El ROADMAP va SIEMPRE el primero de todo, por encima de las carpetas.
+        const pin = "00_ROADMAP"
+        if (a.slugSegment === pin && b.slugSegment !== pin) return -1
+        if (b.slugSegment === pin && a.slugSegment !== pin) return 1
+        // Resto: carpetas primero, luego ficheros, y alfabético con orden numérico.
+        if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+          return a.displayName.localeCompare(b.displayName, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        }
+        return !a.isFolder && b.isFolder ? 1 : -1
+      },
+    }),
   ],
   right: [
     Component.Graph(),
@@ -62,7 +77,22 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      sortFn: (a, b) => {
+        // El ROADMAP va SIEMPRE el primero de todo, por encima de las carpetas.
+        const pin = "00_ROADMAP"
+        if (a.slugSegment === pin && b.slugSegment !== pin) return -1
+        if (b.slugSegment === pin && a.slugSegment !== pin) return 1
+        // Resto: carpetas primero, luego ficheros, y alfabético con orden numérico.
+        if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+          return a.displayName.localeCompare(b.displayName, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        }
+        return !a.isFolder && b.isFolder ? 1 : -1
+      },
+    }),
   ],
   right: [],
 }
